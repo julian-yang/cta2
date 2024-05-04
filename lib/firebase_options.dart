@@ -34,42 +34,48 @@ class DefaultFirebaseOptions {
   }
 
   // TODO (codelab user): Replace with your Firebase credentials
-  // Generate this file with credentials with the FlutterFire CLI
+
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'YOUR API KEY',
-    appId: 'YOUR APP ID',
-    messagingSenderId: '',
-    projectId: 'flutterfire-ui-codelab',
-    authDomain: 'flutterfire-ui-codelab.firebaseapp.com',
-    storageBucket: 'flutterfire-ui-codelab.appspot.com',
-    measurementId: 'MEASUREMENT ID',
+    apiKey: 'AIzaSyBplUnh6wa2rrrsKBJ4n5f4BEMnlp519h4',
+    appId: '1:584935283123:web:92288be7d7a4c93571d3c6',
+    messagingSenderId: '584935283123',
+    projectId: 'chinesetextloader',
+    authDomain: 'chinesetextloader.firebaseapp.com',
+    databaseURL: 'https://chinesetextloader.firebaseio.com',
+    storageBucket: 'chinesetextloader.appspot.com',
   );
 
+  // Generate this file with credentials with the FlutterFire CLI
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'YOUR API KEY',
-    appId: 'YOUR APP ID',
-    messagingSenderId: '',
-    projectId: 'flutterfire-ui-codelab',
-    storageBucket: 'flutterfire-ui-codelab.appspot.com',
+    apiKey: 'AIzaSyACNYW832ujRBydlQKUq6BoVcHDfsLTE5E',
+    appId: '1:584935283123:android:b6668ee22e2dcdd5',
+    messagingSenderId: '584935283123',
+    projectId: 'chinesetextloader',
+    databaseURL: 'https://chinesetextloader.firebaseio.com',
+    storageBucket: 'chinesetextloader.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'YOUR API KEY',
-    appId: 'YOUR APP ID',
-    messagingSenderId: '',
-    projectId: 'flutterfire-ui-codelab',
-    storageBucket: 'flutterfire-ui-codelab.appspot.com',
-    iosClientId: 'IOS CLIENT ID',
-    iosBundleId: 'com.example.BUNDLE',
+    apiKey: 'AIzaSyA16pPqKXyBLkGs3Ska18950PUcwVBTBls',
+    appId: '1:584935283123:ios:5d488ec6f935fefd71d3c6',
+    messagingSenderId: '584935283123',
+    projectId: 'chinesetextloader',
+    databaseURL: 'https://chinesetextloader.firebaseio.com',
+    storageBucket: 'chinesetextloader.appspot.com',
+    androidClientId: '584935283123-2ka0a5ma82bs21hts20v6c12ssibsouv.apps.googleusercontent.com',
+    iosBundleId: 'org.julianyang.chinesetextloader',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'YOUR API KEY',
-    appId: 'YOUR APP ID',
-    messagingSenderId: '',
-    projectId: 'flutterfire-ui-codelab',
-    storageBucket: 'flutterfire-ui-codelab.appspot.com',
-    iosClientId: 'IOS CLIENT ID',
-    iosBundleId: 'com.example.BUNDLE',
+    apiKey: 'AIzaSyA16pPqKXyBLkGs3Ska18950PUcwVBTBls',
+    appId: '1:584935283123:ios:5d488ec6f935fefd71d3c6',
+    messagingSenderId: '584935283123',
+    projectId: 'chinesetextloader',
+    databaseURL: 'https://chinesetextloader.firebaseio.com',
+    storageBucket: 'chinesetextloader.appspot.com',
+    androidClientId: '584935283123-2ka0a5ma82bs21hts20v6c12ssibsouv.apps.googleusercontent.com',
+    iosBundleId: 'org.julianyang.chinesetextloader',
   );
+
 }

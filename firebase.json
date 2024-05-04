@@ -1,6 +1,1 @@
-{
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  }
-}
+{"firestore":{"rules":"firestore.rules","indexes":"firestore.indexes.json"},"flutter":{"platforms":{"android":{"default":{"projectId":"chinesetextloader","appId":"1:584935283123:android:b6668ee22e2dcdd5","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"chinesetextloader","configurations":{"android":"1:584935283123:android:b6668ee22e2dcdd5","ios":"1:584935283123:ios:5d488ec6f935fefd71d3c6","macos":"1:584935283123:ios:5d488ec6f935fefd71d3c6","web":"1:584935283123:web:92288be7d7a4c93571d3c6"}}}}}}

@@ -1,4 +1,4 @@
-name: complete
+name: chinesetextloader
 description: "A new Flutter project."
 publish_to: 'none'
 version: 0.1.0
@@ -7,10 +7,10 @@ environment:
   sdk: '>=3.3.0-279.2.beta <4.0.0'
 
 dependencies:
-  firebase_auth: ^4.17.2
-  firebase_core: ^2.25.2
-  firebase_ui_auth: ^1.12.1
-  firebase_ui_oauth_google: ^1.2.17
+  firebase_auth: ^4.19.4
+  firebase_core: ^2.30.1
+  firebase_ui_auth: ^1.14.0
+  firebase_ui_oauth_google: ^1.3.2
   flutter:
     sdk: flutter
   google_sign_in: ^6.2.1

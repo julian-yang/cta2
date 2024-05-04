@@ -1,4 +1,4 @@
-package com.example.complete
+package org.julianyang.chinesetextloader
 
 import io.flutter.embedding.android.FlutterActivity
 
