@@ -6,6 +6,9 @@ import 'package:flutter/material.dart';
 import 'home.dart';
 
 class AuthGate extends StatelessWidget {
+  static const GOOGLE_CLIENT_ID =
+      '584935283123-qv99i4atmsglul7bhp5nk0dbp2cuhau8.apps.googleusercontent.com';
+
   const AuthGate({super.key});
 
   @override
@@ -16,9 +19,7 @@ class AuthGate extends StatelessWidget {
             ? SignInScreen(
                 providers: [
                   EmailAuthProvider(),
-                  GoogleProvider(
-                      clientId:
-                          '584935283123-qv99i4atmsglul7bhp5nk0dbp2cuhau8.apps.googleusercontent.com'),
+                  GoogleProvider(clientId: GOOGLE_CLIENT_ID),
                 ],
                 headerBuilder: (context, constraints, shrinkOffset) => Padding(
                     padding: const EdgeInsets.all(20),
