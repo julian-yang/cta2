@@ -1,5 +1,6 @@
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
+import 'utils.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -40,6 +41,13 @@ class HomeScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.displaySmall,
             ),
             const SignOutButton(),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20)),
+              onPressed: () {
+                copyToClipBoard('你好');
+              },
+              child: const Text('Open pleco'),
+            )
           ],
         ),
       ),
