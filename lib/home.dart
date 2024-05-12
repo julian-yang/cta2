@@ -1,5 +1,7 @@
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
+import 'profile/profile_icon.dart';
+
 import 'utils.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,26 +11,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: const ProfileIcon(),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.person),
-            onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute<ProfileScreen>(
-                  builder: (context) => ProfileScreen(actions: [
-                    SignedOutAction((context) => Navigator.of(context).pop())
-                  ], children: [
-                    const Divider(),
-                    Padding(
-                      padding: const EdgeInsets.all(2),
-                      child: AspectRatio(
-                        aspectRatio: 1,
-                        child: Image.asset('assets/flutterfire_300x.png'),
-                      ),
-                    )
-                  ]),
-                )),
-          ),
+          const SignOutButton(),
         ],
         automaticallyImplyLeading: false,
       ),
@@ -40,9 +25,10 @@ class HomeScreen extends StatelessWidget {
               'Welcome!',
               style: Theme.of(context).textTheme.displaySmall,
             ),
-            const SignOutButton(),
+            // const SignOutButton(),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20)),
+              style: ElevatedButton.styleFrom(
+                  textStyle: const TextStyle(fontSize: 20)),
               onPressed: () {
                 copyToClipBoard('你好');
               },
